@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login-register.css">
+</head>
+<body>
+    <div class="container">
+        <!--Data or Content-->
+        <div class="box-1">
+            <div class="content-holder">
+                <h2>خوش آمدید</h2>
+               
+                <button class="button-1" onclick="signup()">ثبت نام</button>
+                <button class="button-2" onclick="login()">ورود</button>
+            </div>
+        </div>
+  
+        
+        <!--Forms-->
+        <div class="box-2">
+            <div class="login-form-container">
+                <h1>ورود</h1>
+                <input type="text" placeholder="نام کاربری" class="input-field">
+                <br><br>
+                <input type="password" placeholder="رمز عبور" class="input-field">
+                <br><br>
+                <button class="login-button" type="button">ورود</button>
+            </div>
+  
+  
+  <!--Create Container for Signup form-->
+        <div class="signup-form-container">
+            <h1>ثبت نام</h1>
+            <input type="text" placeholder="نام کاربری" class="input-field">
+            <br><br>
+            <input type="email" placeholder="ایمیل" class="input-field">
+            <br><br>
+            <input type="password" placeholder="رمز عبور" class="input-field">
+            <br><br>
+            <input type="text" placeholder="شماره تلفن" class="input-field">
+            <br><br>
+            <select name="" id="" class="input-field">
+                <option value="" disabled selected>تحصیلات</option>
+                 <option value="diplom">دیپلم</option>
+                 <option value="lisans">لیسانس</option>
+                 <option value="foq">فوق لیسانس</option>
+                <option value="doc">دکتری</option>
+             </select>
+             <br><br>
+             <span>جنسیت:</span>
+             زن<input name="radio" type="radio" value="female" required>
+             مرد<input name="radio" type="radio" value="male" required>
+            <br><br>
+            <button class="signup-button" type="button">ثبت نام</button>
+            <br><br>
+            <input type="checkbox">
+            <span id="span">قوانین را میپذیرم</span>
+        </div>
+        </div>
+        <script src="login-register.js">
+             
+        </script>
+</body>
+</html>
