@@ -93,6 +93,10 @@ function checkInputs(){
     }
     if(emailValue===''){
         setErrorFor(email,'لطفا ایمیل را وارد کنید*');
+
+    }else if(!emailValidation(emailValue)){
+        
+        setErrorFor(email,'ایمیل صحیح نمیباشد*');
     }
     else{
         setSuccessFor(email);
@@ -122,4 +126,8 @@ function checkInputs(){
         setSuccessFor(select);
     }
 }
+//email validation function
+function emailValidation(email) {
+    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+   }
     
