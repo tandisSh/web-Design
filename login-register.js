@@ -114,6 +114,9 @@ function checkInputs(){
     //phoneNumber
     if(phoneNumberValue===''){
         setErrorFor(phoneNumber,'لطفا شماره تماس خود را وارد کنید*');
+    }else if(!phoneNumberValidation(phoneNumberValue)){
+        
+        setErrorFor(phoneNumber,'شماره تلفن صحبح نمیباشد*');
     }
     else{
         setSuccessFor(phoneNumber);
@@ -141,4 +144,7 @@ function emailValidation(email) {
    function passwordValidation(pass){
     return/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/.test(pass)
    }
-    
+    //phone number validation function
+    function phoneNumberValidation(phoneN){
+        return /^(09(1[0-9]|3[1-9]|2[1-9])-?[0-9]{3}-?[0-9]{4})$/.test(phoneN);
+    }
