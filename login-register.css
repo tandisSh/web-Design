@@ -6,7 +6,7 @@
   body{
     font-family: Arial, Helvetica, sans-serif;
     direction:rtl;
-    background-color: rgba(127, 204, 255, 0.61);
+    background-color: rgba(248, 244, 211, 0.718);
   }
   
   .container
@@ -14,9 +14,9 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     background-color: red;
-    background: linear-gradient(to bottom, rgb(6, 108, 100),  rgb(14, 48, 122));
+    background: linear-gradient(to bottom, rgba(193, 44, 230, 0.882),  rgb(225, 230, 90));
     width: 800px;
-    height: 560px;
+    height: 600px;
     margin: 10% auto;;
     border-radius: 5px;
   }
@@ -53,6 +53,10 @@
     width: 150px;
     margin: 20px auto;
   }
+  .form{
+    margin-inline: auto;
+    margin-top: 30px;
+  }
   
   .box-2{
     background: rgba(255,255,255,0.5) ;
@@ -64,7 +68,9 @@
   {
     text-align: center;
     margin-top: 10%;
-  
+  }
+  .login-form-container label{
+    margin-right: 30px;
   }
   
   .login-form-container h1
@@ -130,26 +136,39 @@
     outline: none;
     background-color: rgb(56, 189, 149);  
   }
-  
-.floating-label {
-  position: relative;
-}
 
-.floating-label input {
-  width: 250px;
-}
-
-.floating-label label {
-  position: absolute;
-  top: 0;
-  left: 10px;
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-
-.floating-label input:focus + label,
-.floating-label input:not(:placeholder-shown) + label {
-  top: -20px;
-  font-size: 12px;
-  color: rgb(56, 102, 189);
-}
+  #userName{
+    background: url(pic/user.png) no-repeat ;
+    background-color: aliceblue;
+    background-position: right;
+    background-size: 17px;
+    padding-right: 25px;
+  }
+  #pass{
+    background: url(pic/pass.png) no-repeat ;
+    background-color: aliceblue;
+    background-position: right;
+    background-size: 17px;
+    padding-right: 22px;
+  }
+  #email{
+    background: url(pic/email.png) no-repeat ;
+    background-color: aliceblue;
+    background-position: right;
+    background-size: 17px;
+    padding-right: 25px;
+  }
+  #phoneN{
+    background: url(pic/phone.png) no-repeat ;
+    background-color: aliceblue;
+    background-position: right;
+    background-size: 17px;
+    padding-right: 25px;
+  }
+  #nationaC{
+    background: url(pic/nCode.png) no-repeat ;
+    background-color: aliceblue;
+    background-position: right;
+    background-size: 17px;
+    padding-right: 25px;
+  }

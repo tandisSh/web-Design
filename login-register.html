@@ -22,25 +22,30 @@
         <!--Forms-->
         <div class="box-2">
             <div class="login-form-container">
-                <h1>ورود</h1>
-                <input type="text" placeholder="نام کاربری" class="input-field">
-                <br><br>
-                <input type="password" placeholder="رمز عبور" class="input-field">
+                <form action="" class="form">
+                    <h1>ورود</h1>
+                <input type="text"  class="input-field" name="userName" placeholder="نام کاربری" id="userName">
+            <br><br>
+                <input type="password"  class="input-field" name="password" placeholder="رمز عبور" id="pass">
                 <br><br>
                 <button class="login-button" type="button">ورود</button>
+            </form>
             </div>
   
   
   <!--Create Container for Signup form-->
         <div class="signup-form-container">
+            <form action="" class="form">
             <h1>ثبت نام</h1>
-            <input type="text" placeholder="نام کاربری" class="input-field">
+            <input type="text"  class="input-field" placeholder="نام کاربری" id="userName">
             <br><br>
-            <input type="email" placeholder="ایمیل" class="input-field">
+            <input type="email" class="input-field" placeholder="ایمیل" id="email">
             <br><br>
-            <input type="password" placeholder="رمز عبور" class="input-field">
+            <input type="password" class="input-field" placeholder="رمز عبور" id="pass">
             <br><br>
-            <input type="text" placeholder="شماره تلفن" class="input-field">
+            <input type="text"  class="input-field" placeholder="شماره تماس" id="phoneN">
+            <br><br>
+            <input type="text"  class="input-field" placeholder="کد ملی" id="nationaC">
             <br><br>
             <select name="" id="" class="input-field">
                 <option value="" disabled selected>تحصیلات</option>
@@ -58,8 +63,11 @@
             <br><br>
             <input type="checkbox">
             <span id="span">قوانین را میپذیرم</span>
+        </form>
         </div>
         </div>
+
+
         <script src="login-register.js">
              
         </script>
