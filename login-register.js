@@ -85,49 +85,60 @@ function checkInputs(){
     const passwordValue=password.value.trim();
     const phoneNumberValue=phoneNumber.value.trim();
     const nationalCodeValue=nationalCode.value.trim();
-
+    //usreName 
     if(usernameValue===''){
         setErrorFor(username,'لطفا نام را وارد کنید*');
     }else{
         setSuccessFor(username);
     }
+    //email
     if(emailValue===''){
         setErrorFor(email,'لطفا ایمیل را وارد کنید*');
 
     }else if(!emailValidation(emailValue)){
-        
         setErrorFor(email,'ایمیل صحیح نمیباشد*');
     }
     else{
         setSuccessFor(email);
     }
+    //password
     if(passwordValue===''){
         setErrorFor(password,'لطفا رمز عبور را وارد کنید*');
+    }else if(!passwordValidation(passwordValue)){
+        
+        setErrorFor(pass,'رمز عبور بین 6 الی 20 کارکتر(شامل حروف بزرگ و کوچک و اعداد*');
     }
     else{
         setSuccessFor(password);
     }
+    //phoneNumber
     if(phoneNumberValue===''){
         setErrorFor(phoneNumber,'لطفا شماره تماس خود را وارد کنید*');
     }
     else{
         setSuccessFor(phoneNumber);
     }
+    //nationalCode
     if(nationalCodeValue===''){
         setErrorFor(nationalCode,'لطفا کد ملی خود را وارد کنید*');
     }
     else{
         setSuccessFor(nationalCode);
     }
-
+    //degree
     if (select.value === '') {
         setErrorFor(select, 'لطفا مدرک تحصیلی خود را انتخاب کنید*');
     } else {
         setSuccessFor(select);
     }
 }
+
 //email validation function
 function emailValidation(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+   }
+   //password validation function
+   function passwordValidation(pass){
+    return/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/.test(pass)
    }
     
