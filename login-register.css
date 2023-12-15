@@ -16,8 +16,9 @@
     background-color: red;
     background: linear-gradient(to bottom, rgba(193, 44, 230, 0.882),  rgb(225, 230, 90));
     width: 800px;
-    height: 600px;
-    margin: 10% auto;;
+    height: 712px;
+    margin-inline: auto;
+    margin-top: 10px;
     border-radius: 5px;
   }
   
@@ -28,7 +29,7 @@
     font-size: 14px;
     font-weight: lighter;
     letter-spacing: 2px;
-    margin-top: 15%;
+    margin-top: 80%;
     padding: 50px;
   }
   
@@ -52,16 +53,17 @@
     background-color: white;
     width: 150px;
     margin: 20px auto;
+    cursor: pointer;
   }
   .form{
     margin-inline: auto;
-    margin-top: 30px;
+    margin-top: 70px;
   }
   
   .box-2{
-    background: rgba(255,255,255,0.5) ;
-  
+    background: rgba(255,255,255,0.5) ; 
     margin: 5px;
+    height: 700px;
   }
   
   .login-form-container
@@ -79,18 +81,69 @@
     font-size: 24px;
     padding: 20px;
   }
-  
-  .input-field
-  {
-    box-sizing: border-box;
-    font-size: 14px;
-    padding: 10px;
+  .form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+    text-align: right;
+    margin-right: 125px;
+  }
+  .form-control input{
     border-radius: 7px;
     border: 1px solid rgb(168, 168, 168);
+    display: block;
+    font-size: 14px;
     width: 250px;
-    outline: none;
+    padding: 10px;
+    margin-inline: auto;
   }
-  
+  .form-control.success input{
+    border-color:rgb(20, 207, 20)
+  }
+  .form-control.error input{
+    border-color: red;
+  }
+  .form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    margin-right: 125px;
+  }
+  .form-control.error small{
+   visibility: visible;
+   color: red;
+  }
+  #select{
+    width: 285px;
+    height: 35px;
+    margin-inline: auto;
+    border-radius: 7px;
+    border: 1px solid rgb(168, 168, 168);
+  }
+
+  .gender{
+    margin-top: -10px;
+    text-align: right;
+    margin-right: 125px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.checkbox{
+    margin-top: 10px;
+    text-align: right;
+    margin-right: 125px;
+    margin-bottom: 12px;
+  }
+
   .login-button{
     box-sizing: border-box;
     color: white;
@@ -98,9 +151,10 @@
     padding: 13px;
     border-radius: 7px;
     border: none;
-    width: 250px;
+    width: 280px;
     outline: none;
     background-color: rgb(56, 102, 189);
+    cursor: pointer;
   }
   
   .button-2
@@ -132,11 +186,27 @@
     padding: 13px;
     border-radius: 7px;
     border: none;
-    width: 250px;
+    width: 280px;
     outline: none;
-    background-color: rgb(56, 189, 149);  
+    background-color: rgb(56, 189, 149); 
+    cursor: pointer; 
   }
 
+  /* icons */
+  #userName1{
+    background: url(pic/user.png) no-repeat ;
+    background-color: aliceblue;
+    background-position: right;
+    background-size: 17px;
+    padding-right: 25px;
+  }
+  #pass1{
+    background: url(pic/pass.png) no-repeat ;
+    background-color: aliceblue;
+    background-position: right;
+    background-size: 17px;
+    padding-right: 22px;
+  }
   #userName{
     background: url(pic/user.png) no-repeat ;
     background-color: aliceblue;
@@ -172,3 +242,5 @@
     background-size: 17px;
     padding-right: 25px;
   }
+ 
+  

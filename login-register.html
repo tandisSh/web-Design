@@ -8,7 +8,6 @@
 </head>
 <body>
     <div class="container">
-        <!--Data or Content-->
         <div class="box-1">
             <div class="content-holder">
                 <h2>خوش آمدید</h2>
@@ -22,53 +21,84 @@
         <!--Forms-->
         <div class="box-2">
             <div class="login-form-container">
-                <form action="" class="form">
+                
+                <form action="" class="form" id="loginForm">
                     <h1>ورود</h1>
-                <input type="text"  class="input-field" name="userName" placeholder="نام کاربری" id="userName">
-            <br><br>
-                <input type="password"  class="input-field" name="password" placeholder="رمز عبور" id="pass">
-                <br><br>
-                <button class="login-button" type="button">ورود</button>
+                    <div class="form-control">
+                        <label for="userName1">نام کاربری:</label>
+                <input type="text"  class="input-field" name="userName" id="userName1">
+                <small>error</small>
+            </div>
+            <div class="form-control">
+                <label for="pass1">رمز عبور:</label>
+                <input type="password"  class="input-field" name="password"  id="pass1">
+                <small>error</small>
+            </div>
+            <div>
+                <button class="login-button" type="submit">ورود</button>
+            </div>
             </form>
             </div>
   
   
   <!--Create Container for Signup form-->
         <div class="signup-form-container">
-            <form action="" class="form">
+            <form  class="form" id="myform" >
             <h1>ثبت نام</h1>
-            <input type="text"  class="input-field" placeholder="نام کاربری" id="userName">
-            <br><br>
-            <input type="email" class="input-field" placeholder="ایمیل" id="email">
-            <br><br>
-            <input type="password" class="input-field" placeholder="رمز عبور" id="pass">
-            <br><br>
-            <input type="text"  class="input-field" placeholder="شماره تماس" id="phoneN">
-            <br><br>
-            <input type="text"  class="input-field" placeholder="کد ملی" id="nationaC">
-            <br><br>
-            <select name="" id="" class="input-field">
+    <div class="form-control ">
+        <label for="userName">نام کاربری:</label>
+            <input type="text"    id="userName" >
+            <small>error</small>
+        </div>  
+        <div class="form-control  ">
+            <label for="email">ایمیل:</label>
+            <input type="text"  id="email" >
+            <small>error</small>
+        </div>
+        <div class="form-control">
+            <label for="pass">رمز عبور:</label>
+            <input type="password"   id="pass" >
+            <small >error</small>
+        </div>
+           <div class="form-control">
+            <label for="phoneN">شماره تماس:</label>
+            <input type="text"  id="phoneN"  >
+            <small >error</small>
+        </div>
+        <div class="form-control">
+            <label for="nationaC">کد ملی:</label>
+            <input type="text"   id="nationaC" >
+            <small>error</small>
+        </div>
+            <div class="form-control">
+            <select name="" id="select" >
                 <option value="" disabled selected>تحصیلات</option>
                  <option value="diplom">دیپلم</option>
                  <option value="lisans">لیسانس</option>
                  <option value="foq">فوق لیسانس</option>
                 <option value="doc">دکتری</option>
              </select>
-             <br><br>
+             <small>error</small>
+            </div>
+            <div class="gender">
              <span>جنسیت:</span>
-             زن<input name="radio" type="radio" value="female" required>
+             زن<input name="radio" type="radio" value="female" required >
              مرد<input name="radio" type="radio" value="male" required>
-            <br><br>
-            <button class="signup-button" type="button">ثبت نام</button>
-            <br><br>
-            <input type="checkbox">
+            </div>
+            <div>
+            <button class="signup-button" type="submit">ثبت نام</button>
+        </div>
+        <div class="checkbox">
             <span id="span">قوانین را میپذیرم</span>
+            <input type="checkbox" required >
+        </div>
         </form>
         </div>
         </div>
 
 
-        <script src="login-register.js">
+        <script defer src="login-register.js"></script>
+
              
         </script>
 </body>
