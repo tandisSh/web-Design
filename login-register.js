@@ -88,7 +88,11 @@ function checkInputs(){
     //usreName 
     if(usernameValue===''){
         setErrorFor(username,'لطفا نام را وارد کنید*');
-    }else{
+    }else if(!usernameValidation(usernameValue)){
+        setErrorFor(username,'نام کاربری صحیح نمیباشد*');
+
+    }
+    else{
         setSuccessFor(username);
     }
     //email
@@ -147,4 +151,8 @@ function emailValidation(email) {
     //phone number validation function
     function phoneNumberValidation(phoneN){
         return /^(09(1[0-9]|3[1-9]|2[1-9])-?[0-9]{3}-?[0-9]{4})$/.test(phoneN);
+    }
+    //username validation
+    function usernameValidation(userName){
+        return  /^(?![0-9])[a-zA-Z0-9\u0600-\u06FF]{3,}$/ .test(userName);
     }
