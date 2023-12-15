@@ -18,26 +18,108 @@ function login()
 
 }
 
-// JavaScript code (can be placed in login-register.js file)
+//form validation
+const loginform=document.getElementById('loginForm');
+const username1=document.getElementById('userName1');
+const password1=document.getElementById('pass1');
 
-window.addEventListener("DOMContentLoaded", function() {
-  const inputFields = document.querySelectorAll(".input-field");
+const form=document.getElementById('myform');
+const username=document.getElementById('userName');
+const email=document.getElementById('email');
+const password=document.getElementById('pass');
+const phoneNumber=document.getElementById('phoneN');
+const nationalCode=document.getElementById('nationaC');
+const select = document.getElementById('select');
 
-  inputFields.forEach(function(input) {
-      input.addEventListener("focus", function() {
-          this.previousElementSibling.style.top = "-15px";
-          this.previousElementSibling.style.left = "10px";
-          this.previousElementSibling.style.opacity = "1";
-          this.previousElementSibling.style.color = "#333333";
-      });
 
-      input.addEventListener("blur", function() {
-          if (this.value === "") {
-              this.previousElementSibling.style.top = "0";
-              this.previousElementSibling.style.left = "10px";
-              this.previousElementSibling.style.opacity = "1";
-              this.previousElementSibling.style.color = "#666666";
-          }
-      });
-  });
+ function setSuccessFor(input) {
+    const formControl = input.parentElement;
+    formControl.className = 'form-control success';
+    formControl.classList.remove('error');
+    formControl.classList.add('success');
+ }
+
+ function setErrorFor(input, message) {
+    const formControl = input.parentElement;
+    let small = formControl.querySelector('small');
+    if (!small) {
+        small = document.createElement('small');
+        formControl.appendChild(small);
+    }
+    small.innerText = message;
+    formControl.className = 'form-control error';
+    formControl.classList.add('error');
+    formControl.classList.remove('success');
+}
+
+	form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    checkInputs();
 });
+
+loginform.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    checkInputs1();
+});
+
+function checkInputs1(){
+    const username1Value=username1.value.trim();
+    const password1Value=pass1.value.trim();
+
+    if(username1Value===''){
+        setErrorFor(username1,'لطفا نام را وارد کنید*');
+    }else{
+        setSuccessFor(username1);
+    }
+    if(password1Value===''){
+        setErrorFor(password1,'لطفا رمز عبور را وارد کنید*');
+    }
+    else{
+        setSuccessFor(password1);
+    }
+}
+function checkInputs(){
+    
+    const usernameValue=username.value.trim();
+    const emailValue=email.value.trim();
+    const passwordValue=password.value.trim();
+    const phoneNumberValue=phoneNumber.value.trim();
+    const nationalCodeValue=nationalCode.value.trim();
+
+    if(usernameValue===''){
+        setErrorFor(username,'لطفا نام را وارد کنید*');
+    }else{
+        setSuccessFor(username);
+    }
+    if(emailValue===''){
+        setErrorFor(email,'لطفا ایمیل را وارد کنید*');
+    }
+    else{
+        setSuccessFor(email);
+    }
+    if(passwordValue===''){
+        setErrorFor(password,'لطفا رمز عبور را وارد کنید*');
+    }
+    else{
+        setSuccessFor(password);
+    }
+    if(phoneNumberValue===''){
+        setErrorFor(phoneNumber,'لطفا شماره تماس خود را وارد کنید*');
+    }
+    else{
+        setSuccessFor(phoneNumber);
+    }
+    if(nationalCodeValue===''){
+        setErrorFor(nationalCode,'لطفا کد ملی خود را وارد کنید*');
+    }
+    else{
+        setSuccessFor(nationalCode);
+    }
+
+    if (select.value === '') {
+        setErrorFor(select, 'لطفا مدرک تحصیلی خود را انتخاب کنید*');
+    } else {
+        setSuccessFor(select);
+    }
+}
+    
