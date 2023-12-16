@@ -28,7 +28,7 @@ const username=document.getElementById('userName');
 const email=document.getElementById('email');
 const password=document.getElementById('pass');
 const phoneNumber=document.getElementById('phoneN');
-const nationalCode=document.getElementById('nationaC');
+const nationalCode=document.getElementById('nationalC');
 const select = document.getElementById('select');
 
 
@@ -128,6 +128,10 @@ function checkInputs(){
     //nationalCode
     if(nationalCodeValue===''){
         setErrorFor(nationalCode,'لطفا کد ملی خود را وارد کنید*');
+
+    }else if(!NationalCodeValidation(nationalCodeValue)){
+ 
+        setErrorFor(nationalCode,'کد ملی صحبح نمیباشد*');
     }
     else{
         setSuccessFor(nationalCode);
@@ -156,3 +160,22 @@ function emailValidation(email) {
     function usernameValidation(userName){
         return  /^(?![0-9])[a-zA-Z0-9\u0600-\u06FF]{3,}$/ .test(userName);
     }
+    //nationalCode validation
+    function NationalCodeValidation(nationalC) {
+        if (/^[0-9]{10}$/.test(nationalC)) { // valid codemelli.lenght
+            let sumCodemelliNumber = 0;
+            for (let i = 0; i < 9; i++) {
+                sumCodemelliNumber += parseInt(nationalC[i]) * (10 - i);
+            }
+            let rem = sumCodemelliNumber % 11;
+            let lastNationalCodeDigit = parseInt(nationalC[9]);
+            if ((rem > 1 && (11 - rem === lastNationalCodeDigit)) || (rem <= 1 && rem === lastNationalCodeDigit)) { // valid codemelli
+                return true;
+            } else {
+                return false;
+            }
+        } else { // invalid codemelli
+            return false;
+        }
+    }
+    
