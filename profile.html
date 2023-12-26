@@ -8,11 +8,11 @@
   </head>
   <body>
     <p ><h2 id="h">حساب کاربری</h2></p>
+    <p> <h2 id="h2" style="display: none;">ویرایش حساب  </h2></p>
     <div class="con">
     <div class="container1">
       <div class="box">
         <div class="profile">
-   
          <img src="pic/profile.webp" alt="Profile Image" class="profile-image">
          <pre class="pre">
          <h2 class="profile-name">Tandis</h2>
@@ -37,10 +37,25 @@
             <span>جنسیت:</span>
             <span>زن</span>
           </div>
-          
           <button id="editButton" class="btn btn-primary">ویرایش حساب </button>
         </div>
+        <!-- edit section  -->
+        <form id="profileForm" class="profile-form" style="display: none;">
+        <div class="edit-details">
+          <div class="form-floating mb-3">
+              <input type="text" id="nameInput" class="form-control" placeholder="Name" >
+              <label for="nameInput">نام کاربری</label>
+          </div>
+          <div class="mb-3">
+              <input type="email" id="emailInput" class="form-control" placeholder="ایمیل" >
+          </div>
+          <div class="mb-3">
+              <input type="tel" id="phoneInput" class="form-control" placeholder="شماره تماس" >
+          </div>
+        </div>
+      </form>
       </div>
     </div>
+    <script src="profile.js"></script>
   </body>
 </html>
