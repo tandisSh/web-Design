@@ -84,3 +84,8 @@
         display: grid;
         margin-top: 145px;
        }
+       #editButton{
+        background-color: burlywood;
+        border-color: burlywood;
+        margin: 50px 40px;
+       }
