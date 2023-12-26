@@ -1,42 +1,61 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>profile</title>
-    <link rel="stylesheet" href="profile.css">
-</head>
-<body>
-    <div class="container">
-        <div class="box">
-            <h1>حساب کاربری من</h1>
-        </div>
 
-    </div>
-</body>
-</html> -->
 <!DOCTYPE html>
 <html>
   <head>
     <title>User Profile Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="profile.css">
   </head>
   <body>
-    <div class="container">
-      <div class="profile">
-        <img src="pic/profile.webp" alt="Profile Image" class="profile-image">
-        <div class="profile-details">
-          <h2 class="profile-name">Tandis</h2>
+    <p ><h2 id="h">حساب کاربری</h2></p>
+    <p> <h2 id="h2" style="display: none;">ویرایش حساب  </h2></p>
+    <div class="con">
+    <div class="container1">
+      <div class="box">
+        <div class="profile">
+         <img src="pic/profile.webp" alt="Profile Image" class="profile-image">
+         <pre class="pre">
+         <h2 class="profile-name">Tandis</h2>
           <p class="profile-email">tandis@example.com</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, rerum. A, rerum. Perferendis excepturi aut ut aspernatur omnis veritatis ad voluptates suscipit distinctio totam molestias aliquid natus sit, illo velit.</p>
-          <p class="profile-bio"></p>
-          <div class="profile-button">
-            <button class="social-icon">دوره های شما</button>
-            <button  class="social-icon">طراحی های شما</button>
-            
+        </pre>
+       </div>
+      </div>
+        <div class="profile-details">
+            <div class="details">
+            <span>شماره تماس:</span>
+            <span> 09336540361</span>
+          </div>
+          <div class="details">
+            <span>کد ملی:</span>
+            <span>4490523701</span>
+          </div>
+       <div class="details">
+        <span>تحصیلات:</span>
+        <span>دکترا</span>
+       </div>
+          <div class="details">
+            <span>جنسیت:</span>
+            <span>زن</span>
+          </div>
+          <button id="editButton" class="btn btn-primary">ویرایش حساب </button>
+        </div>
+        <!-- edit section  -->
+        <form id="profileForm" class="profile-form" style="display: none;">
+        <div class="edit-details">
+          <div class="form-floating mb-3">
+              <input type="text" id="nameInput" class="form-control" placeholder="Name" >
+              <label for="nameInput">نام کاربری</label>
+          </div>
+          <div class="mb-3">
+              <input type="email" id="emailInput" class="form-control" placeholder="ایمیل" >
+          </div>
+          <div class="mb-3">
+              <input type="tel" id="phoneInput" class="form-control" placeholder="شماره تماس" >
           </div>
         </div>
+      </form>
       </div>
     </div>
+    <script src="profile.js"></script>
   </body>
 </html>
