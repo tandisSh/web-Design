@@ -1,15 +1,15 @@
 
       /* CSS Styles */
+      html {
+        direction: rtl;
+      }
+
       body {
         width: 100vw;
         height: 100vh;
         background-color: #f0e6dbd4;
       }
-      
-           
-    html {
-      direction: rtl;
-    }
+
     .con{
       display: flex;
       margin-top: 35px;
@@ -44,6 +44,12 @@
         margin-top: 25px;
         width: 200px;
       }
+      #h2{
+        text-align: center;
+        margin-inline: auto;
+        margin-top: 25px;
+        width: 200px;
+      }
       
       .profile-image {
         width: 135px;
@@ -67,6 +73,11 @@
         justify-content: space-between;
       }
 
+      .pre{
+        display: grid;
+        margin-top: 145px;
+       }
+       
     .profile-name {
         font-size: 28px;
         font-weight: 600;
@@ -80,12 +91,19 @@
         margin-bottom: 20px;
       }
       
-      .pre{
-        display: grid;
-        margin-top: 145px;
-       }
        #editButton{
         background-color: burlywood;
         border-color: burlywood;
         margin: 50px 40px;
        }
+       .edit-details{
+        margin-top:25px;
+       }
+       .form-control{
+        width:60%;
+        margin-right:20%;
+       }
+       .form-floating label{
+        margin-left: 68%;
+       }
+    
