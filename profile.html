@@ -41,6 +41,16 @@
         </div>
         <!-- edit section  -->
         <form id="profileForm" class="profile-form" style="display: none;">
+                <!-- edit usre pic  -->
+      <div class="profile-pic">
+        <label class="-label" for="file">
+          <span class="glyphicon glyphicon-camera"></span>
+          <span>Change Image</span>
+        </label>
+        <input id="file" type="file" onchange="loadFile(event)"/>
+        <img src="pic/profile.webp" id="output" width="200" />
+      </div>
+      <!-- edit-details -->
         <div class="edit-details">
           <div class="form-floating mb-3">
               <input type="text" id="nameInput" class="form-control" placeholder="Name" >
