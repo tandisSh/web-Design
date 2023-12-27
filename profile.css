@@ -106,4 +106,60 @@
        .form-floating label{
         margin-left: 68%;
        }
+       /* change profile photo  */
+  .profile-pic {
+    color: transparent;
+    transition: all .3s ease;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    position: relative;
+    transition: all .3s ease;
+    margin-right: 20px;
+  
+    input {
+      display: none;
+    }
     
+    img {
+      position: absolute;
+      object-fit: cover;
+      width: 130px;
+      height: 130px;
+      box-shadow: 0 0 10px 0 rgba(255,255,255,.35);
+      border-radius: 100px;
+      z-index: 0;
+    }
+    
+    .-label {
+      cursor: pointer;
+      height: 130px;
+      width: 130px;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100px;
+    }
+    
+    &:hover {
+      .-label {
+        background-color: rgba(0,0,0,.8);
+        z-index: 10000;
+        color: white;
+        transition: black.2s ease-in-out;
+        border-radius: 100px;
+        margin-bottom: 0;
+      }
+    }
+    
+    span {
+      display: inline-flex;
+      padding: .2em;
+      height: 2em;
+    }
+  }
+    
+    a:hover {
+      text-decoration: none;
+    }
