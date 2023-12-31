@@ -12,3 +12,23 @@ html{
         border-radius: 15px;
       background-color: rgba(237, 235, 212, 0.882);
       }
+
+      #hero {
+        background-image: url('pic/body.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        text-align: center;
+      }
+      #hero h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      #hero p {
+        font-size: 18px;
+      }
