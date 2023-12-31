@@ -1,32 +1,33 @@
 
-      /* CSS Styles */
-      html {
-        direction: rtl;
-      }
-
       body {
         width: 100vw;
         height: 100vh;
-        background-color: #f0e6dbd4;
+        background-color: #f6eddbd4;
       }
-      .custom-space {
-        margin-left: 900px; 
-       }
-    .con{
-      display: flex;
-      margin-top: 35px;
-      margin-inline:auto;
-     }
-      .container1 {
-        width: 700px;
-        height: 550px;
-        margin: auto 420px auto 80px;
-        background-color: rgba(255, 255, 255, 0.5);
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        direction: rtl;
-        border-radius: 10px;
+    html {
+      direction: rtl;
     }
-    .box{
+    
+      .custom-space {
+          margin-left: 900px; 
+         }
+    
+   .con{
+    display: flex;
+    margin-top: 35px;
+    margin-inline:auto;
+   }
+    .container1 {
+      width: 700px;
+      height: 550px;
+      margin: auto 420px auto 80px;
+      background-color: rgba(255, 255, 255, 0.5);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      direction: rtl;
+      border-radius: 10px;
+  }
+
+     .box{
       background-image: url(pic/back.jpg);
       background-repeat: no-repeat;
       background-size: cover;
@@ -36,26 +37,30 @@
      display:grid;
      border-radius: 10px;
     }
+   
+
       .profile {
         display: flex;
         align-items: center;
       }
+
       #h{
         text-align: center;
         margin-inline: auto;
         margin-top: 25px;
         width: 200px;
       }
+
       #h2{
         text-align: center;
         margin-inline: auto;
         margin-top: 25px;
         width: 200px;
       }
-      
+
       .profile-image {
-        width: 135px;
-        height: 135px;
+        width: 155px;
+        height: 155px;
         border-radius: 50%;
         object-fit: cover;
         margin:90px 5px  auto 20px;
@@ -69,74 +74,89 @@
         margin-right: 13%;
         font-size: 18px;
     }
-         .details{
+
+      .details{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-      }
-
+        column-gap: 50px;
+        }
+      
       .pre{
-        display: grid;
-        margin-top: 145px;
-       }
-       
-    .profile-name {
+         display: grid;
+         margin-top: 145px;
+         }
+
+      .profile-name {
         font-size: 28px;
         font-weight: 600;
         margin-bottom: 10px;
         color: wheat;
       }
-      
+   
       .profile-email {
         font-size: 16px;
         color: #6c757d;
         margin-bottom: 20px;
       }
-      
-       #editButton{
+            
+      #editButton{
         background-color: burlywood;
         border-color: burlywood;
         margin: 50px 40px;
-       }
-       .edit-details{
-        margin-top:25px;
-       }
-       .form-control{
-        width:60%;
-        margin-right:20%;
-       }
-       .form-floating label{
-        margin-left: 68%;
-       }
-       /* change profile photo  */
-  .profile-pic {
-    color: transparent;
-    transition: all .3s ease;
-    display: flex;
-    justify-content:right;
-    align-items: center;
-    position: relative;
-    transition: all .3s ease;
-    margin-right: 20px;
+      }
+
+
+      .form-control{
+        width:70%;
+      
+      }
+      .form-floating label{
+        padding: 1rem  1rem ;
+        left: unset;
+      }
+ 
+     .edit-details {
+      margin-top:-170px;
+      margin-right: 30%;
+      align-items: center;
+      justify-content: center;
+     }
+
+
+     .profile-form{
+      margin: 50px 10px;
+
+     }
+ /* change profile photo  */
+    .profile-pic {
+      color: transparent;
+      transition: all .3s ease;
+      display: flex;
+      justify-content:right;
+      align-items: center;
+      position: relative;
+      transition: all .3s ease;
+      margin-right: 20px;
   
-    input {
-      display: none;
-    }
-    
-    img {
-      position: absolute;
-      object-fit: cover;
-      width: 130px;
-      height: 130px;
-      box-shadow: 0 0 10px 0 rgba(255,255,255,.35);
-      border-radius: 100px;
-      z-index: 0;
-    }
+      input {
+        display: none;
+      }
+      
+      img {
+        position: absolute;
+        object-fit: cover;
+        width: 165px;
+        height: 165px;
+        box-shadow: 0 0 10px 0 rgba(255,255,255,.35);
+        border-radius: 100px;
+        z-index: 0;
+      }
     
     .-label {
       cursor: pointer;
-      height: 130px;
-      width: 130px;
+      height: 165px;
+      width: 165px;
       background-color: black;
       display: flex;
       justify-content: center;
@@ -165,10 +185,13 @@
     a:hover {
       text-decoration: none;
     }
+     /* change profile photo  */
 
-
+   
+  
+  /* side bar */
  .cont{
-  background-color:  rgba(70, 68, 65, 0.908);
+  background-color: rgba(70, 68, 65, 0.908);
   display: table-row;
   width: 50px;
   margin-left: 200px;
@@ -194,3 +217,15 @@
   width: 70px;
   border-radius: 10px;
  }
+
+ .edit{
+  display: flex;
+  flex-direction: column;
+ }
+
+.dkButton{
+  margin-right: 40%;
+  margin-top: 15px;
+ }
+
+ 
