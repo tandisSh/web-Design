@@ -6,27 +6,34 @@
   body{
     font-family: Arial, Helvetica, sans-serif;
     direction:rtl;
-    background-color: rgba(170, 232, 152, 0.785);
+    background-color: #f6eddbd4;
+    /* background-image: url(pic/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    */
   }
   
   .container
   {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background-color: rgb(224, 141, 141);
-    background-image: url('pic/7014640.jpg');
-    background-size: cover;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
     width: 800px;
     height: 712px;
     margin-inline: auto;
     margin-top: 10px;
     border-radius: 5px;
   }
+  .box-1 {
+    background: rgba(255, 255, 255, 0.5);
+    background-image: url(pic/2.jpg);
   
+  }
   .content-holder
   {
     text-align: center;
-    color: black;
+    color: rgb(3, 3, 3);
     font-size: 14px;
     font-weight: lighter;
     letter-spacing: 2px;
@@ -51,7 +58,7 @@
     font-size: 15px;
     padding: 10px;
     border-radius: 6px;
-    background-color: white;
+    background-color: #f6eddbd4;;
     width: 150px;
     margin: 20px auto;
     cursor: pointer;
@@ -62,7 +69,7 @@
   }
   
   .box-2{
-    background: rgba(255,255,255,0.5) ; 
+     background: rgba(255, 255, 255, 0.5);
     margin: 5px;
     height: 700px;
   }
@@ -78,7 +85,7 @@
   
   .login-form-container h1
   {
-    color: black;
+    color: rgb(6, 6, 6);
     font-size: 24px;
     padding: 20px;
   }
@@ -88,12 +95,14 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-bottom: 3px;
   }
   .form-control label{
     display: inline-block;
     margin-bottom: 5px;
     text-align: right;
     margin-right: 125px;
+    
   }
   .form-control input{
     border-radius: 7px;
@@ -108,11 +117,17 @@
   input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
-  } */
+  } 
   .form-control.success input{
     border-color:rgb(20, 207, 20);
   }
+  .form-control.success select{
+    border-color:rgb(20, 207, 20);
+  }
   .form-control.error input{
+    border-color: red;
+  }
+  .form-control.error select{
     border-color: red;
   }
   .form-control small{
@@ -126,15 +141,15 @@
    color: red;
   }
   #select{
-    width: 285px;
-    height: 35px;
-    margin-inline: auto;
     border-radius: 7px;
-    border: 1px solid rgb(168, 168, 168);
+    font-size: 14px;
+    width: 285px;
+    padding: 10px;
+    margin-inline: auto;
   }
 
   .gender{
-    margin-top: -10px;
+    margin-top: 0px;
     text-align: right;
     margin-right: 125px;
     margin-bottom: 12px;
@@ -152,14 +167,13 @@
 
   .login-button{
     box-sizing: border-box;
-    color: white;
     font-size: 14px;
     padding: 13px;
     border-radius: 7px;
     border: none;
     width: 280px;
     outline: none;
-    background-color: rgb(56, 102, 189);
+    background-color: #f6eddbd4;
     cursor: pointer;
   }
   
@@ -180,21 +194,19 @@
   
   .signup-form-container h1
   {
-    color: black;
     font-size: 24px;
     padding: 20px;
   }
   
   .signup-button{
     box-sizing: border-box;
-    color: white;
     font-size: 14px;
     padding: 13px;
     border-radius: 7px;
     border: none;
     width: 280px;
     outline: none;
-    background-color: rgb(56, 189, 149); 
+    background-color:#f6eddbd4; 
     cursor: pointer; 
   }
 

@@ -150,7 +150,7 @@ function emailValidation(email) {
    }
    //password validation function
    function passwordValidation(pass){
-    return/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/.test(pass)
+    return/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/.test(pass);
    }
     //phone number validation function
     function phoneNumberValidation(phoneN){
@@ -178,4 +178,3 @@ function emailValidation(email) {
             return false;
         }
     }
-    

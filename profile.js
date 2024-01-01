@@ -21,3 +21,8 @@ cancelButton.addEventListener("click", function() {
     h2.style.display ="none"; 
     box.style.display ="block";
 });
+// edit user profile 
+var loadFile = function (event) {
+    var image = document.getElementById("output");
+    image.src = URL.createObjectURL(event.target.files[0]);
+  };
