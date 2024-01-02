@@ -39,10 +39,11 @@ nav{
 }
 .logo span{
     font-weight: bold;
-    padding-left: 15px;
-    font-size: 18px;
+    font-size: 20px;
     text-transform: uppercase;
+    padding-right: 26px;
 }
+
 a{
     position: relative;
     color: rgb(85, 83, 83);
