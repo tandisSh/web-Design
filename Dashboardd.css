@@ -1,6 +1,23 @@
 /* import google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+/* responsive page */
+@media (max-width: 600px) {
+    body {
+           background-color: lightblue;
+           font-size: 18px;       
+        }
+    img {
+           max-width: 100%;
+           height: auto;
+       }
+    .container {
+           display: flex;
+           flex-wrap: wrap;
+       }
+}
+
+/* styles */
 *{
     margin: 0;
     padding: 0;
@@ -66,6 +83,7 @@ nav .fas{
     margin-left: 10px;
 }
 a:hover{
+    /* background: rgb(250, 241, 228); */
     background: #eee;
 }
 .logout{
@@ -179,6 +197,7 @@ a:hover{
     background: rgba(0, 0, 0, 0.842);
 }
 
+   
 
 
 
