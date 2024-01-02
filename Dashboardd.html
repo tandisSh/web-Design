@@ -10,32 +10,6 @@
 
 </head>
 
-<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
-
-<script>
-const xValues = ["عکاسی مقدماتی", "عکاسی پیشرفته", "فتوشاپ"];
-const yValues = [80, 30, 20];
-const barColors = ["red", "green","blue"];
-
-new Chart("myChart", {
-  type: "bar",
-  data: {
-    labels: xValues,
-    datasets: [{
-      backgroundColor: barColors,
-      data: yValues
-    }]
-  },
-  options: {
-    legend: {display: false},
-    title: {
-      display: true,
-      text: "یادگیری من"
-    }
-  }
-    });
-</script>
-
 <body>
     <div class="container">
          <nav>
@@ -166,7 +140,60 @@ new Chart("myChart", {
                     </div>
                 </div>
             </section>
+            <div id="charts">
+            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+        
+        <canvas id="Chart" style="width:100%;max-width:600px"></canvas>
+    </div>
+
+            <script>
+            const xValues = ["عکاسی مقدماتی", "عکاسی پیشرفته", "فتوشاپ"];
+            const yValues = [80, 30, 20];
+            const barColors = ["red", "green","blue"];
+
+            new Chart("myChart", {
+            type: "bar",
+            data: {
+                labels: xValues,
+                datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+                }]
+            },
+            options: {
+                legend: {display: false},
+                title: {
+                display: true,
+                text: "یادگیری من"
+                }
+            }
+                });
+          
+                const x = ['فروردین','اردیبهشت','خرداد','تیر','مرداد','شهریور','مهر','آبان','آذر','دی','بهمن','اسفند'];
+                const y = [1,2,5,3,7,6,2,3,4,8];
+                
+                new Chart("Chart", {
+                  type: "line",
+                  data: {
+                    labels: x,
+                    datasets: [{
+                      fill: false,
+                      lineTension: 0,
+                      backgroundColor: "rgba(0,0,255,1.0)",
+                      borderColor: "rgba(0,0,255,0.1)",
+                      data: y
+                    }]
+                  },
+                  options: {
+                    legend: {display: false},
+                    scales: {
+                      yAxes: [{ticks: {min: 1, max:10}}],
+                    }
+                  }
+                });
+                </script>
          </section>
+  
     </div>
     
 </body>

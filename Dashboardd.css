@@ -37,7 +37,7 @@ nav{
     position: relative;
     top: 0;
     bottom: 0;
-    height: 100vh;
+    height: 119vh;
     left: 0;
     background: #fff;
     width: 280px;
@@ -196,7 +196,12 @@ a:hover{
 .box button:hover{
     background: rgba(0, 0, 0, 0.842);
 }
-
+#charts{
+    display: flex;
+}
+#Chart{
+    margin-top: 25px;
+}
    
 
 
