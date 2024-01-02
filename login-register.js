@@ -19,9 +19,10 @@ function login()
 }
 
 //form validation
-const loginform=document.getElementById('loginForm');
-const username1=document.getElementById('userName1');
-const password1=document.getElementById('pass1');
+const loginForm = document.getElementById('loginForm');
+const username1 = document.getElementById('userName1');
+const password1 = document.getElementById('pass1');
+
 
 const form=document.getElementById('myform');
 const username=document.getElementById('userName');
@@ -56,28 +57,45 @@ const select = document.getElementById('select');
     e.preventDefault();
     checkInputs();
 });
-
-loginform.addEventListener('submit',(e)=>{
-    e.preventDefault();
-    checkInputs1();
-});
-
-function checkInputs1(){
-    const username1Value=username1.value.trim();
-    const password1Value=pass1.value.trim();
-
-    if(username1Value===''){
-        setErrorFor(username1,'لطفا نام را وارد کنید*');
-    }else{
+//Login form
+//Login form
+function checkInputs1() {
+    const usernameValue = username1.value.trim();
+    const passwordValue = password1.value.trim();
+ 
+    if (usernameValue === '') {
+        setErrorFor(username1, 'لطفا نام را وارد کنید*');
+    } else if (!usernameValidation(usernameValue)) {
+        setErrorFor(username1, 'نام کاربری صحیح نمیباشد*');
+    } else {
         setSuccessFor(username1);
     }
-    if(password1Value===''){
-        setErrorFor(password1,'لطفا رمز عبور را وارد کنید*');
-    }
-    else{
+ 
+    if (passwordValue === '') {
+        setErrorFor(password1, 'لطفا رمز عبور را وارد کنید*');
+    } else if (!passwordValidation(passwordValue)) {
+        setErrorFor(password1, 'رمز عبور بین 6 الی 20 کارکتر(شامل حروف بزرگ و کوچک و اعداد*');
+    } else {
         setSuccessFor(password1);
     }
-}
+ //localStorage
+    if (usernameValue !== '' && passwordValue !== '') {
+        // Store the username and password in localStorage
+        localStorage.setItem('username', usernameValue);
+        localStorage.setItem('password', passwordValue);
+ 
+        // Redirect to the next page
+        window.location.href = 'Dashboardd.html';
+    }
+ }
+ 
+  
+  loginForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    checkInputs1();
+  });
+  
+ 
 function checkInputs(){
     
     const usernameValue=username.value.trim();
