@@ -177,21 +177,7 @@ a:hover{
 .box button:hover{
     background: rgba(0, 0, 0, 0.842);
 }
-/* ,,, */
-.box i{
-    font-size: 7rem;
-    float: right;
-    margin: -20px 20px 20px 0;
-}
-.html{
-    color: rgb(25, 94, 54);
-}
-.css{
-    color: rgb(104, 179, 35);
-}
-.js{
-    color: rgb(28, 98, 179);
-}
+
 
 
 
