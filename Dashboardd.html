@@ -6,9 +6,35 @@
     <link rel="stylesheet" href="Dashboardd.css"/>
     <!-- link font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
 </head>
 
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+<script>
+const xValues = ["عکاسی مقدماتی", "عکاسی پیشرفته", "فتوشاپ"];
+const yValues = [80, 30, 20];
+const barColors = ["red", "green","blue"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "یادگیری من"
+    }
+  }
+    });
+</script>
 
 <body>
     <div class="container">
