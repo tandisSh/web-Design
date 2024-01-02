@@ -1,14 +1,89 @@
 /* styles.css */
 html{
-    direction: rtl;
+  direction: rtl;
+}
+body{
+  background-color: rgb(250, 241, 228);
+}
+/* Header */
+nav {
+    background-color: #ffffff;
   }
-  /* Header */
-  nav {
-      background-color: #ffffff;
-    }
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  #hero {
+    background-image: url('pic/body.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+  }
+  #hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  #hero p {
+    font-size: 18px;
+  }
+
+  /* Gallery Section */
+  #gallery {
+    padding: 50px 0;
+  }
+  #gallery h2 {
+    margin-bottom: 30px;
+  }
+  #gallery img {
+    margin-bottom: 20px;
+  }
 
  #log{
-     border: 1px solid gray;
-        border-radius: 15px;
-      background-color: rgba(237, 235, 212, 0.882);
-      }
+  border: 1px solid gray;
+  border-radius: 15px;
+  background-color: rgba(237, 235, 212, 0.882);
+ }
+
+ .h{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: wheat;
+}
+
+.h h2{
+  width: 100%;
+  height: 50px;
+  background-color: rgb(49, 41, 41);
+}
+ .btn {
+  background-color: rgb(49, 41, 41);
+  border-color: rgb(49, 41, 41);
+}
+ 
+.img-fluid{
+  border-radius: 15px;
+}
+#row{
+margin-right: 3%;
+}
+  /* Footer */
+  footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+  }
+    /* About Section */
+    #about {
+      padding: 50px 0;
+    }
+    #about p {
+      margin-bottom: 20px;
+    }
