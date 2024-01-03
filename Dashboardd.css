@@ -42,23 +42,19 @@ nav{
     background: #fff;
     width: 280px;
     overflow: hidden;
-    box-shadow: 0 20px 35px rgb(0, 0, 0.1);
+    box-shadow: 0 45px 35px rgb(0 0 0 / 66%);
 }
 .logo{
     text-align: center;
     display: flex;
-    margin: 10px 0 0 10px;
+    margin: 1px 0 0 10px;
 }
-.logo img{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-}
+
 .logo span{
     font-weight: bold;
     font-size: 20px;
     text-transform: uppercase;
-    padding-right: 26px;
+  
 }
 
 a{
@@ -82,8 +78,7 @@ nav .fas{
     top: 12px;
     margin-left: 10px;
 }
-a:hover{
-    /* background: rgb(250, 241, 228); */
+.container a:hover{
     background: #eee;
 }
 .logout{
@@ -199,11 +194,20 @@ a:hover{
 #charts{
     display: flex;
     margin-top: 25px;
-
 }
-
-
-
+/* header */
+#n {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 50px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
    
 
 
