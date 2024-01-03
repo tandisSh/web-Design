@@ -11,7 +11,9 @@
 </head>
 
 <body>
+
     <div class="container">
+    
          <nav>
             <ul>
                 <li>
@@ -21,18 +23,14 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="" onclick="window.location.href='mainPage.html'; return false;">
                         <i class="fas fa-home"></i>
-                        <span class="nav-item">
-                        <button class="nav-link" href="#" onclick="window.location.href='mainPage.html'; return false;">صفحه اصلی</button>
-                        </span>
+                        <span class="nav-item">صفحه اصلی</span>
                     </a></li>
                 <li>
-                    <a href="">
+                    <a href="" onclick="window.location.href='profile.html'; return false;">
                         <i class="fas fa-user"></i>
-                        <span class="nav-item">
-                            <button class="nav-link" href="#" onclick="window.location.href='profile.html'; return false;">حساب کاربری</button>
-                        </span>
+                        <span class="nav-item">حساب کاربری</span>
                     </a></li>
                 <li>
                     <a href="">
@@ -40,7 +38,7 @@
                         <span class="nav-item">کیف پول</span>
                     </a></li>
                 <li>
-                    <a href="">
+                    <a href="#charts">
                         <i class="fas fa-chart-bar"></i>
                         <span class="nav-item">آنالیز</span>
                     </a></li>
@@ -60,11 +58,9 @@
                         <span class="nav-item">راهنما</span>
                     </a></li>
                 <li>
-                    <a href="" class="logout">
+                    <a href="" class="logout" onclick="window.location.href='mainPage.html'; return false;">
                         <i class="fas fa-sign-out-alt"></i>
-                        <span class="nav-item">
-                            <button class="nav-link" href="#" onclick="window.location.href='mainPage.html'; return false;">خروج</button>
-                        </span>
+                        <span class="nav-item">خروج</span>
                     </a>
                 </li>
             </ul>
@@ -140,16 +136,18 @@
                     </div>
                 </div>
             </section>
-            <div id="charts">
-            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
-        
-        <canvas id="Chart" style="width:100%;max-width:600px"></canvas>
-    </div>
+                        <div id="charts">
+                            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                        
+                            <canvas id="Chart" style="width:100%;max-width:600px"></canvas>
+                        </div>
+            </section>
 
             <script>
+                
             const xValues = ["عکاسی مقدماتی", "عکاسی پیشرفته", "فتوشاپ"];
             const yValues = [80, 30, 20];
-            const barColors = ["red", "green","blue"];
+            const barColors = ["orange","yellow","red"];
 
             new Chart("myChart", {
             type: "bar",
@@ -165,10 +163,13 @@
                 title: {
                 display: true,
                 text: "یادگیری من"
-                }
+                },
+                scales: {
+                      yAxes: [{ticks: {min: 0, max:100}}],
+                  }
             }
                 });
-          
+            
                 const x = ['فروردین','اردیبهشت','خرداد','تیر','مرداد','شهریور','مهر','آبان','آذر','دی','بهمن','اسفند'];
                 const y = [1,2,5,3,7,6,2,3,4,8];
                 
@@ -186,13 +187,20 @@
                   },
                   options: {
                     legend: {display: false},
+                    title: {
+                    display: true,
+                    text: "فعالیت من"
+                },
                     scales: {
                       yAxes: [{ticks: {min: 1, max:10}}],
-                    }
                   }
+                    }
+                    
+
                 });
+            
                 </script>
-         </section>
+            </div>
   
     </div>
     
