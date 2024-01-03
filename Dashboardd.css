@@ -37,7 +37,7 @@ nav{
     position: relative;
     top: 0;
     bottom: 0;
-    height: 168vh;
+    height: 175vh;
     left: 0;
     background: #fff;
     width: 280px;
@@ -83,7 +83,7 @@ nav .fas{
 }
 .logout{
     position: absolute;
-    bottom: 824px;
+    bottom: 765px;
 }
 
 /* main section */
@@ -170,6 +170,7 @@ nav .fas{
 }
 .box{
     width: 33%;
+    height: 230px;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
@@ -183,11 +184,12 @@ nav .fas{
 .box button{
     background: #000;
     color: #fff;
-    padding: 7px 10px;
+    padding: 10px 22px;
     border-radius: 10px;
-    margin-top: 3rem;
+    margin-top: 6rem;
     cursor: pointer;
 }
+
 .box button:hover{
     background: rgba(0, 0, 0, 0.842);
 }
@@ -221,6 +223,7 @@ nav .fas{
     font-size: 4.33333em;
     margin-top: 120px;
 }
+
 
 
 
