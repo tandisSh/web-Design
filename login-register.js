@@ -4,6 +4,10 @@ function signup()
     document.querySelector(".signup-form-container").style.cssText = "display: block;";
     document.querySelector(".button-1").style.cssText = "display: none";
     document.querySelector(".button-2").style.cssText = "display: block";
+    document.querySelector(".register-title").style.cssText="display:none";
+    document.querySelector(".register-title1").style.cssText="display:none";
+    document.querySelector(".login-title").style.cssText="display:block";
+    document.querySelector(".login-title1").style.cssText="display:block";
 
 };
 
@@ -13,6 +17,10 @@ function login()
     document.querySelector(".login-form-container").style.cssText = "display: block;";
     document.querySelector(".button-2").style.cssText = "display: none";
     document.querySelector(".button-1").style.cssText = "display: block";
+    document.querySelector(".register-title").style.cssText="display:block";
+    document.querySelector(".register-title1").style.cssText="display:block";
+    document.querySelector(".login-title").style.cssText="display:none";
+     document.querySelector(".login-title1").style.cssText="display:none";
 
 }
 
