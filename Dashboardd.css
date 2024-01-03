@@ -37,7 +37,7 @@ nav{
     position: relative;
     top: 0;
     bottom: 0;
-    height: 122vh;
+    height: 168vh;
     left: 0;
     background: #fff;
     width: 280px;
@@ -83,7 +83,7 @@ nav .fas{
 }
 .logout{
     position: absolute;
-    bottom: 0;
+    bottom: 824px;
 }
 
 /* main section */
@@ -209,6 +209,30 @@ nav .fas{
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
    
+.course1{
+    justify-content: space-between;
+    display: flex;
+
+}
+.course1 img{
+    margin-right: 3px;
+}
+.fa-lg {
+    font-size: 4.33333em;
+    margin-top: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
