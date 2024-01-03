@@ -19,7 +19,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav custom-space">
           <li class="nav-item small-padding">
-            <a class="nav-link" href="#">صفحه اصلی</a>
+            <a class="nav-link" href="#" onclick="window.location.href='mainPage.html'; return false;">صفحه اصلی</a>
           </li>
           <li class="nav-item small-padding">
             <a class="nav-link" href="#">درباره ما</a>
@@ -54,13 +54,13 @@
        </div>
       </div>
         <div class="profile-details">
-            <div class="details">
-            <span>شماره تماس:</span>
-            <span> 09336540361</span>
+          <div class="details">
+            <span>نام:</span>
+            <span> تندیس</span>
           </div>
           <div class="details">
-            <span>کد ملی:</span>
-            <span>4490523701</span>
+            <span> نام خانوادگی:</span>
+            <span> شجاعی پور</span>
           </div>
        <div class="details">
         <span>تحصیلات:</span>
@@ -69,10 +69,19 @@
           <div class="details">
             <span>جنسیت:</span>
             <span>زن</span>
+          </div> 
+          <div class="details">
+            <span>شماره تماس:</span>
+            <span> 09336540361</span>
+          </div>
+          <div class="details">
+            <span>کد ملی:</span>
+            <span>4490523701</span>
           </div>
         
           <!-- editButton -->
-          <button id="editButton" class="btn btn-primary">ویرایش حساب </button>
+          <button id="editButton">ویرایش حساب </button>
+        
         </div>
     <!-- edit section  -->
    <div class="edit">
@@ -134,9 +143,9 @@
 
    <div class="cont">
      <button type="button" class="option " data-bs-toggle="modal" data-bs-target="#myModal"><img src="pic/key.png" style="height: 25px; width: 25px;" title="تغییر رمز عبور"></button>
-      <button class="option">01</button>
+      <!-- <button class="option">01</button> -->
         <button class="option"><img src="pic/notification.png" style="height: 25px; width: 25px;" title="اعلانات"></button>
-       <button class="option"><img src="pic/exit.png" style="height: 25px; width: 25px;" title="خروج "></button>
+       <button class="option"><img src="pic/exit.png" style="height: 25px; width: 25px;" title="خروج " onclick="window.location.href='Dashboardd.html'; return false;"></button>
     </div>
 </div>
 
@@ -180,5 +189,4 @@
 
   </body>
   
-
 </html>

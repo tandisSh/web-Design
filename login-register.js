@@ -74,12 +74,12 @@ function checkInputs1() {
     if (passwordValue === '') {
         setErrorFor(password1, 'لطفا رمز عبور را وارد کنید*');
     } else if (!passwordValidation(passwordValue)) {
-        setErrorFor(password1, 'رمز عبور بین 6 الی 20 کارکتر(شامل حروف بزرگ و کوچک و اعداد*');
+        setErrorFor(password1, 'رمز عبورد صحیح نمیباشد*');
     } else {
         setSuccessFor(password1);
     }
  //localStorage
-    if (usernameValue !== '' && passwordValue !== '') {
+    if (usernameValue !== '' && passwordValue !== '' && usernameValidation(usernameValue) && passwordValidation(passwordValue)) {
         // Store the username and password in localStorage
         localStorage.setItem('username', usernameValue);
         localStorage.setItem('password', passwordValue);
