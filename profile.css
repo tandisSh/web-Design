@@ -2,7 +2,7 @@
       body {
         width: 100vw;
         height: 100vh;
-        background-color: #f6eddbd4;
+        background-color: #f4f2dbd4;
       }
     html {
       direction: rtl;
@@ -32,7 +32,7 @@
       background-repeat: no-repeat;
       background-size: cover;
      width: 100%;
-     height: 200px;
+     height: 250px;
      padding: 20px;
      display:grid;
      border-radius: 10px;
@@ -63,7 +63,7 @@
         height: 155px;
         border-radius: 50%;
         object-fit: cover;
-        margin:90px 5px  auto 20px;
+        margin:130px 5px  auto 20px;
     }
 
       .profile-details {
@@ -73,6 +73,7 @@
         top: 55%;
         margin-right: 13%;
         font-size: 18px;
+        margin-top: 45px;
     }
 
       .details{
@@ -80,11 +81,12 @@
         flex-wrap: wrap;
         justify-content: space-between;
         column-gap: 50px;
+        overflow: auto;
         }
       
       .pre{
          display: grid;
-         margin-top: 145px;
+         margin-top: 190px;
          }
 
       .profile-name {
@@ -100,11 +102,12 @@
         margin-bottom: 20px;
       }
             
-      #editButton{
-        background-color: burlywood;
-        border-color: burlywood;
-        margin: 50px 40px;
-      }
+      #editButton {
+        background-color: #ebd0aead;
+        border: 1px solid #ebd0aead;
+        border-radius: 5px;
+        margin: 20px 90px;
+    }
 
 
       .form-control{
@@ -197,12 +200,12 @@
   margin-left: 200px;
   box-shadow: 0px 0px 10px rgba(141, 121, 72, 0.474);
   border-radius: 10px;
-  height: 400px;
-  margin-top: 65px;
+  height: 360px;
+  margin-top: 100px;
  }
 
  .option{
-  height: 100px;
+  height: 120px;
   background-color: rgb(85, 79, 72);
   text-align: center;
   width: 50px;
@@ -227,5 +230,6 @@
   margin-right: 40%;
   margin-top: 15px;
  }
+
 
  
