@@ -2,7 +2,6 @@ function signup()
 {
     document.querySelector(".login-form-container").style.cssText = "display: none;";
     document.querySelector(".signup-form-container").style.cssText = "display: block;";
-    document.querySelector(".container").style.cssText = "linear-gradient(to bottom, rgba(193, 44, 230, 0.882),  rgb(225, 230, 90));";
     document.querySelector(".button-1").style.cssText = "display: none";
     document.querySelector(".button-2").style.cssText = "display: block";
 
@@ -12,7 +11,6 @@ function login()
 {
     document.querySelector(".signup-form-container").style.cssText = "display: none;";
     document.querySelector(".login-form-container").style.cssText = "display: block;";
-    document.querySelector(".container").style.cssText = " linear-gradient(to bottom, rgba(193, 44, 230, 0.882),  rgb(225, 230, 90));";
     document.querySelector(".button-2").style.cssText = "display: none";
     document.querySelector(".button-1").style.cssText = "display: block";
 
