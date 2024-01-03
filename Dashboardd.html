@@ -6,21 +6,27 @@
     <link rel="stylesheet" href="Dashboardd.css"/>
     <!-- link font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <!-- chart -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
 </head>
 
 <body>
+<<<<<<< HEAD
+=======
+    <header>
+            <nav id="n">
+                <a href="#"class="logo">
+                    <i class="fas fa-bars"></i>
+                    <span class="nav-item">داشبورد</span>
+                    </a>
+            </nav>
+    </header>
+>>>>>>> 191dfc9157dcf76a4b767e02a09d9694cf03967e
     <div class="container">
     
          <nav>
             <ul>
-                <li>
-                    <a href="#"class="logo">
-                    <img src="pic/logo.jpg" alt="">
-                    <span class="nav-item">داشبورد</span>
-                    </a>
-                </li>
                 <li>
                     <a href="" onclick="window.location.href='mainPage.html'; return false;">
                         <i class="fas fa-home"></i>
@@ -32,6 +38,10 @@
                         <span class="nav-item">حساب کاربری</span>
                     </a></li>
                 <li>
+                    <a href="#pictures">
+                        <i class="fas fa-images"></i>
+                        <span class="nav-item">گالری من</span>
+                    </a></li>
                     <a href="">
                         <i class="fas fa-wallet"></i>
                         <span class="nav-item">کیف پول</span>
@@ -41,12 +51,16 @@
                         <i class="fas fa-chart-bar"></i>
                         <span class="nav-item">آنالیز</span>
                     </a></li>
+<<<<<<< HEAD
                 <!-- <li>
                     <a href="">
                         <i class="fas fa-task"></i>
                         <span class="nav-item">تکالیف</span>
                     </a></li>
                 <li> -->
+=======
+              
+>>>>>>> 191dfc9157dcf76a4b767e02a09d9694cf03967e
                     <a href="">
                         <i class="fas fa-cog"></i>
                         <span class="nav-item">تنظیمات</span>
@@ -68,7 +82,7 @@
          <section class="main">
             <div class="main-top">
                 <h1>مهارت ها</h1>
-                <i class="fas fa-user-cog"></i>
+                <!-- <i class="fas fa-user-cog"></i> -->
             </div>
 
             <div class="main-skills">
@@ -99,11 +113,11 @@
              <div class="card">
                 <i class="fas fa-money-bill-wave"></i>
                 <h3>آموزش درآمدزایی</h3>
+                
                 <p>به بیش از2000دانشجو بپیوندید.</p>
                 <button>شروع کنید</button>
              </div>
             </div>
-
             <section class="main-course">
                 <h1>دوره های من</h1>
                 <div class="course-box">
@@ -112,7 +126,7 @@
                             <h3>دوره آموزشی عکاسی مقدماتی</h3>
                             <P>80% پیشرفت من</P>
                             <button>ادامه</button>
-                            <img src="pic/camera.jpg" style="height: 100px; width: 250px;">
+                            <img src="pic/camera.jpg" style="height: 150px; width: 150px; border-radius: 10px; margin-right: 123px;">
                             <!-- <i class="fas fa-camera"></i> -->
                         </div>
 
@@ -120,17 +134,36 @@
                             <h3>دوره آموزشی عکاسی پیشرفته</h3>
                             <P>30% پیشرفت من</P>
                             <button>ادامه</button>
-                            <img src="pic/pishrafte.jpg" style="height: 100px; width: 250px;">
+                            <img src="pic/pishrafte.jpg" style="height: 150px; width: 150px; border-radius: 10px; margin-right: 123px;">
                             <!-- <i class="fab fa-canon"></i> -->
                         </div>
+
 
                         <div class="box">
                             <h3>دوره آموزشی نرم افزار فتوشاپ</h3>
                             <p>20%  پیشرفت من</p>
                             <button>ادامه</button>
-                            <img src="pic/photoshop.jpg" style="height: 100px; width: 250px;">
+                            <img src="pic/photoshop.jpg" style="height: 150px; width: 150px; border-radius: 10px; margin-right: 123px;">
                             <!-- <i class="fab fa-adobe"></i> -->
                         </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="main-course">
+                <h1>گالری من</h1>
+                <div  class="course-box">
+                    <div id="pictures" class="course1">
+                          
+                        <i class="fas fa-chevron-right fa-lg"></i>
+                   
+                            <img src="pic/moon.jpg" style="height: 250px; width: 250px; border-radius: 10px;">
+                            <img src="pic/photo_2024-01-03_18-43-34.jpg" style="height: 250px; width: 250px; border-radius: 10px;">
+                            <img src="pic/catt.jpg" style="height: 250px; width: 250px; border-radius: 10px;">
+                            <img src="pic/photo_2024-01-03_18-43-22.jpg" style="height: 250px; width: 250px; border-radius: 10px;">
+                   
+                        <i class="fas fa-chevron-left fa-lg"></i>
 
                     </div>
                 </div>
@@ -194,8 +227,6 @@
                       yAxes: [{ticks: {min: 1, max:10}}],
                   }
                     }
-                    
-
                 });
             
                 </script>

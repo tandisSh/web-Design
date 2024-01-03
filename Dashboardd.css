@@ -37,28 +37,24 @@ nav{
     position: relative;
     top: 0;
     bottom: 0;
-    height: 122vh;
+    height: 175vh;
     left: 0;
     background: #fff;
     width: 280px;
     overflow: hidden;
-    box-shadow: 0 20px 35px rgb(0, 0, 0.1);
+    box-shadow: 0 45px 35px rgb(0 0 0 / 66%);
 }
 .logo{
     text-align: center;
     display: flex;
-    margin: 10px 0 0 10px;
+    margin: 1px 0 0 10px;
 }
-.logo img{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-}
+
 .logo span{
     font-weight: bold;
     font-size: 20px;
     text-transform: uppercase;
-    padding-right: 26px;
+  
 }
 
 a{
@@ -82,13 +78,12 @@ nav .fas{
     top: 12px;
     margin-left: 10px;
 }
-a:hover{
-    /* background: rgb(250, 241, 228); */
+.container a:hover{
     background: #eee;
 }
 .logout{
     position: absolute;
-    bottom: 0;
+    bottom: 810px;
 }
 
 /* main section */
@@ -148,6 +143,7 @@ a:hover{
 .main-course{
     margin-top: 20px;
     text-transform: capitalize;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
 .course-box{
     width: 100%;
@@ -175,6 +171,7 @@ a:hover{
 }
 .box{
     width: 33%;
+    height: 230px;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
@@ -188,23 +185,62 @@ a:hover{
 .box button{
     background: #000;
     color: #fff;
-    padding: 7px 10px;
+    padding: 10px 22px;
     border-radius: 10px;
-    margin-top: 3rem;
+    margin-top: 6rem;
     cursor: pointer;
 }
+
 .box button:hover{
     background: rgba(0, 0, 0, 0.842);
 }
 #charts{
     display: flex;
     margin-top: 25px;
+    background-color:#fff;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+/* header */
+#n {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 50px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+   
+.course1{
+    justify-content: space-between;
+    display: flex;
 
+}
+.course1 img{
+    margin-right: 3px;
+}
+.fa-lg {
+    font-size: 4.33333em;
+    margin-top: 120px;
 }
 
 
 
-   
+
+
+
+
+
+
+
+
+
+
 
 
 
