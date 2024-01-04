@@ -4,7 +4,7 @@
 /* responsive page */
 @media (max-width: 600px) {
     body {
-           background-color: lightblue;
+        background: #f5edda;
            font-size: 18px;       
         }
     img {
@@ -28,7 +28,7 @@
     font-family: "Poppins",sans-serif;
 }
 body{
-    background: #dfe9f5;
+    background: #f5edda;
     }
 .container{
     display: flex;
@@ -42,7 +42,7 @@ nav{
     background: #fff;
     width: 280px;
     overflow: hidden;
-    box-shadow: 0 45px 35px rgb(0 0 0 / 66%);
+    box-shadow: 0 45px 35px rgba(69, 69, 69, 0.455);
 }
 .logo{
     text-align: center;
