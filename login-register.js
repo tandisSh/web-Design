@@ -4,6 +4,10 @@ function signup()
     document.querySelector(".signup-form-container").style.cssText = "display: block;";
     document.querySelector(".button-1").style.cssText = "display: none";
     document.querySelector(".button-2").style.cssText = "display: block";
+    document.querySelector(".register-title").style.cssText="display:none";
+    document.querySelector(".register-title1").style.cssText="display:none";
+    document.querySelector(".login-title").style.cssText="display:block";
+    document.querySelector(".login-title1").style.cssText="display:block";
 
 };
 
@@ -13,6 +17,10 @@ function login()
     document.querySelector(".login-form-container").style.cssText = "display: block;";
     document.querySelector(".button-2").style.cssText = "display: none";
     document.querySelector(".button-1").style.cssText = "display: block";
+    document.querySelector(".register-title").style.cssText="display:block";
+    document.querySelector(".register-title1").style.cssText="display:block";
+    document.querySelector(".login-title").style.cssText="display:none";
+     document.querySelector(".login-title1").style.cssText="display:none";
 
 }
 
@@ -95,7 +103,7 @@ function checkInputs1() {
   
  
 function checkInputs(){
-    
+    let isValid = true;
     const usernameValue=username.value.trim();
     const emailValue=email.value.trim();
     const passwordValue=password.value.trim();
@@ -104,9 +112,10 @@ function checkInputs(){
     //usreName 
     if(usernameValue===''){
         setErrorFor(username,'لطفا نام را وارد کنید*');
+        isValid = false;
     }else if(!usernameValidation(usernameValue)){
         setErrorFor(username,'نام کاربری صحیح نمیباشد*');
-
+        isValid = false;
     }
     else{
         setSuccessFor(username);
@@ -114,9 +123,11 @@ function checkInputs(){
     //email
     if(emailValue===''){
         setErrorFor(email,'لطفا ایمیل را وارد کنید*');
+        isValid = false;
 
     }else if(!emailValidation(emailValue)){
         setErrorFor(email,'ایمیل صحیح نمیباشد*');
+        isValid = false;
     }
     else{
         setSuccessFor(email);
@@ -124,9 +135,11 @@ function checkInputs(){
     //password
     if(passwordValue===''){
         setErrorFor(password,'لطفا رمز عبور را وارد کنید*');
+        isValid = false;
     }else if(!passwordValidation(passwordValue)){
         
-        setErrorFor(pass,'رمز عبور بین 6 الی 20 کارکتر(شامل حروف بزرگ و کوچک و اعداد*');
+        setErrorFor(pass,'رمز عبور بین 6 الی 20 کارکتر(شامل حروف بزرگ و کوچک و اعداد*)');
+        isValid = false;
     }
     else{
         setSuccessFor(password);
@@ -134,9 +147,11 @@ function checkInputs(){
     //phoneNumber
     if(phoneNumberValue===''){
         setErrorFor(phoneNumber,'لطفا شماره تماس خود را وارد کنید*');
+        isValid = false;
     }else if(!phoneNumberValidation(phoneNumberValue)){
         
         setErrorFor(phoneNumber,'شماره تلفن صحبح نمیباشد*');
+        isValid = false;
     }
     else{
         setSuccessFor(phoneNumber);
@@ -144,10 +159,12 @@ function checkInputs(){
     //nationalCode
     if(nationalCodeValue===''){
         setErrorFor(nationalCode,'لطفا کد ملی خود را وارد کنید*');
+        isValid = false;
 
     }else if(!NationalCodeValidation(nationalCodeValue)){
  
         setErrorFor(nationalCode,'کد ملی صحبح نمیباشد*');
+        isValid = false;
     }
     else{
         setSuccessFor(nationalCode);
@@ -155,8 +172,17 @@ function checkInputs(){
     //degree
     if (select.value === '') {
         setErrorFor(select, 'لطفا مدرک تحصیلی خود را انتخاب کنید*');
+        isValid = false;
     } else {
         setSuccessFor(select);
+    }
+    if (isValid) {
+        // Store values in local storage
+        localStorage.setItem('username', usernameValue);
+        localStorage.setItem('password', passwordValue);
+ 
+        // Redirect to dashboard
+        window.location.href = "Dashboardd.html";
     }
 }
 

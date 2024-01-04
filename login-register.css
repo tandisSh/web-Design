@@ -11,9 +11,8 @@
     justify-content: center;
   }
   body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     direction:rtl;
-    /* background-color: #f6eddbd4; */
     background-image: url(pic/body.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -166,6 +165,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    color: rgb(248, 244, 244);
 }
 
 .checkbox{
@@ -173,6 +173,7 @@
     text-align: right;
     margin-right: 125px;
     margin-bottom: 12px;
+    color: rgb(248, 244, 244);
   }
 
   .login-button{
@@ -185,6 +186,7 @@
     outline: none;
     background-color: #835132d4;
     cursor: pointer;
+    color: rgb(248, 244, 244);
   }
   
   .button-2
@@ -219,6 +221,7 @@
     outline: none;
     background-color: #835132d4;
     cursor: pointer; 
+    color: rgb(248, 244, 244);
   }
 
   /* icons */

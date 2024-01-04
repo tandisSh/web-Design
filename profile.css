@@ -2,16 +2,12 @@
       body {
         width: 100vw;
         height: 100vh;
-        background-color: #f4f2dbd4;
+        background-color: rgb(250, 241, 228);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       }
     html {
       direction: rtl;
     }
-    
-      .custom-space {
-          margin-left: 900px; 
-         }
-    
    .con{
     display: flex;
     margin-top: 35px;
@@ -70,18 +66,16 @@
         flex: 1;
         padding: 20px;
         position: absolute;
-        top: 55%;
         margin-right: 13%;
         font-size: 18px;
-        margin-top: 45px;
+        margin-top: 35px;
     }
 
       .details{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        column-gap: 50px;
-        overflow: auto;
+        column-gap: 70px;
         }
       
       .pre{
@@ -231,5 +225,15 @@
   margin-top: 15px;
  }
 
-
- 
+ #one{
+  display: flex;
+  column-gap:68%;
+ }
+ #two{
+  display: flex;
+  column-gap:53%;
+ }
+ #tree{
+  display: flex;
+  column-gap:57%;
+ }
